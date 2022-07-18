@@ -10,7 +10,7 @@ load.style.visibility = 'visible';
 setTimeout(() => {
     load.style.display = 'none';
     body.style.visibility = 'visible';
-}, 0);
+}, 3000);
 mobileMenu.addEventListener('click', () => {
     navBar.style.visibility = 'visible';
     navBar.style.animation = 'enter 5s';
