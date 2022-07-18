@@ -78,16 +78,44 @@ a {
     }
     #hamburger{
         display: flex !important;
-        z-index: 1;
+        z-index: 2;
     }
-    #hamburger:active{
-        transform:
+    #cancel{
+        height: 50px;
+        width: 50px;
+        background-color: #fff;
+        border-radius: 10px;
+        position: relative;
     }
+    #cancel::after{
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        content: "\274c";
+        font-size: 20px;
+        color: var(--mainblue);
+        line-height: 50px;
+        text-align: center;
+    }
+    /* #--1{
+        height: 5px;
+        background-color: #fff;
+        width: 35px;
+        border-radius: 10px;
+    }
+    #--2{
+        height: 5px;
+        background-color: #fff;
+        width: 35px;
+        border-radius: 10px;
+    } */
     .nav{
-        padding: 30px 0px 20px !important;
+        padding: 30px 0px 0px !important;
     }
     .nav-bar{
-        display: none !important;
+        visibility: hidden;
         animation: enter 2s;
         text-align: center;
         justify-content: center;
@@ -100,7 +128,7 @@ a {
         margin: 0px 0% !important;
         background-color: var(--mainblue);
         color: #fff;
-        z-index: -1;
+        z-index: 0;
     }
     .nav-bar li{
         border-bottom: 1px #fff solid !important;
