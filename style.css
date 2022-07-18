@@ -134,11 +134,18 @@ a {
         border-bottom: 1px #fff solid !important;
         padding: 10px 50px !important;
     }
+    .flexed{
+        display: flex !important;
+        flex-direction: column;
+    }
   }
 
+.fa-solid{
+    color: var(--mainblue) !important;
+}
 
 :root{
-    --txt-color: #8b8b8b;
+    --txt-color: #757575;
     --mainblue: rgb(40, 140, 255);
 }
 /* 
@@ -308,4 +315,58 @@ a {
 
 .head-img img{
     height: 80%;
+}
+
+/* Section-2 */
+
+.section-2{
+    background-image: url(Images/Vector.png);
+    background-repeat: no-repeat;
+}
+
+.section-2-htxt{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.section-2-htxt h2{
+    font-size: 30px;
+    text-align: center;
+    padding: 20px 0px;
+}
+
+.section-2-htxt p{
+    text-align: center;
+    padding: 20px 0px;
+    color: var(--txt-color);
+}
+
+.divider{
+    background-color: #000;
+    height: 5px;
+    width: 70px;
+}
+
+.flexed{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 20px 0px;
+    flex-wrap: nowrap;
+}
+
+#flex-item{
+    margin: 20px;
+    padding: 20px 20px;
+    box-shadow: 15px 15px 50px rgb(219, 219, 219);
+    border-radius: 10px;
+}
+
+#flex-item h3{
+    padding: 20px 0px 0px;
+}
+
+#flex-item p{
+    padding: 10px 0px;
 }
