@@ -5,6 +5,7 @@ let mobileMenu = document.getElementById('hamburger')
 let navBar = document.querySelector('.nav-bar')
 let mobileMenuCancel = document.getElementById('cancel')
 // mobileMenu.style.display = 'none';
+window.scrollTo(0, 0)
 body.style.visibility = 'hidden';
 load.style.visibility = 'visible';
 setTimeout(() => {

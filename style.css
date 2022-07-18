@@ -166,7 +166,7 @@ a {
     left: 0px;
     height: 100vh;
     overflow: hidden;
-    z-index: 1s;
+    z-index: 1;
 }
 
 .loader::after{
