@@ -4,12 +4,16 @@
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Lato', sans-serif;
 }
 
 a {
     text-decoration: none;
     color: inherit;
+}
+
+p{
+    font-size: 18px;
 }
 
 /* Utilities */
