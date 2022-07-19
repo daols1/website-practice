@@ -40,6 +40,15 @@ a {
         opacity: 1;}
 }
 
+@media only screen and (max-width: 1024px) {
+    .head-img img{
+        max-height: 300px !important;
+    }
+    .sec-3-img, .sec-4-img{
+        max-height: 300px !important;
+    }
+  }
+
 @media only screen and (max-width: 768px) {
     .nav-bar{
         flex-basis: 90% !important;
@@ -52,9 +61,14 @@ a {
     .head-img img{
         max-height: 300px !important;
     }
+    .section-3, .section-4{
+        flex-direction: column !important;
+        justify-content: center;
+        align-items: center;
+    }
   }
 
-@media only screen and (max-width: 435px) {
+@media only screen and (max-width: 560px) {
     .header{
         grid-template-columns: 1fr !important;
     }
@@ -138,6 +152,24 @@ a {
         display: flex !important;
         flex-direction: column;
     }
+    .sec-3-img, .sec-4-img{
+        max-height: 250px !important;
+    }
+    .section-3-txt .btn, .section-4-txt .btn{
+        margin: 0 !important;
+    }
+    .section-3-txt{
+        padding: 0 !important;
+    }
+  }
+
+  @media only screen and (max-width: 350px) {
+    .head-img img{
+        max-height: 300px !important;
+    }
+    .sec-3-img, .sec-4-img{
+        max-height: 200px !important;
+    }
   }
 
 .fa-solid{
@@ -183,7 +215,7 @@ a {
 
 .btn{
     border: 1px var(--mainblue) solid;
-    padding: 10px;
+    padding: 10px 30px;
     border-radius: 20px;
     transition: all ease-in-out;
     transition-delay: 0.1s;
@@ -192,6 +224,11 @@ a {
 .blue-btn{
     background-color: var(--mainblue);
     color: #fff;
+}
+
+.light-btn{
+    color: var(--mainblue);
+    border: 1px var(--mainblue) solid;
 }
 
 .btn:hover{
@@ -369,4 +406,58 @@ a {
 
 #flex-item p{
     padding: 10px 0px;
+}
+
+.down-btn{
+    text-align: center;
+    padding: 20px 0px;
+}
+
+/* Section-3 */
+
+.section-3{
+    display: flex;
+    padding: 90px 0px;
+}
+
+.section-3-txt, .section-4-txt{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 7%;
+}
+
+.section-3-txt h1, .section-4-txt h1{
+    padding: 20px 0px;
+}
+
+.section-3-txt .divider, .section-4-txt .divider{
+    margin: 0px 0px 20px;
+}
+
+.section-3-txt p,.section-4-txt p{
+    margin: 0px 0px 20px;
+}
+
+.section-3-txt .btn{
+    text-align: center;
+    margin-right: 65%;
+}
+
+/* Section-4 */
+
+.section-4{
+    display: flex;
+    padding: 90px 0px;
+    flex-direction: row-reverse;
+}
+
+.section-4-txt{
+    padding-right: 7%;
+    padding-left: 0%;
+}
+
+.section-4-txt .btn{
+    text-align: center;
+    margin-right: 65%;
 }

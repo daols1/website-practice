@@ -5,13 +5,16 @@ let mobileMenu = document.getElementById('hamburger')
 let navBar = document.querySelector('.nav-bar')
 let mobileMenuCancel = document.getElementById('cancel')
 // mobileMenu.style.display = 'none';
+
+body.style.display = 'none';
 window.scrollTo(0, 0)
-body.style.visibility = 'hidden';
 load.style.visibility = 'visible';
+
 setTimeout(() => {
     load.style.display = 'none';
     body.style.visibility = 'visible';
 }, 3000);
+body.style.display = 'block';
 mobileMenu.addEventListener('click', () => {
     navBar.style.visibility = 'visible';
     navBar.style.animation = 'enter 5s';
