@@ -59,6 +59,18 @@ p{
     }
 }
 
+@keyframes floater {
+    0%{border-radius: 50%;
+        transform: rotate(45deg);
+        opacity: 1;}
+    50%{border-radius: 50%;
+        transform: rotate(180deg);
+        opacity: 0.5;}
+    100%{border-radius: none;
+        /* transform: translateY(1); */
+        opacity: 0;}
+}
+
 @media only screen and (max-width: 1024px) {
     .head-img img{
         max-height: 300px !important;
@@ -106,6 +118,9 @@ p{
         grid-template-columns: 1fr !important;
     }
     .section-6-content{
+        grid-template-columns: 1fr !important;
+    }
+    .find-a-doc-head{
         grid-template-columns: 1fr !important;
     }
   }
@@ -226,6 +241,15 @@ p{
     }
     .f-side-3{
         padding: 0px !important;
+    }
+    .page-2-head h1{
+        font-size: 16px;
+    }
+    .page-2-head p{
+        font-size: 14px;
+    }
+    .doc-img img{
+        width: 300px;
     }
   }
 
@@ -743,4 +767,80 @@ p{
     padding: 0px 0px 10px;
     font-weight: 200;
 }
+
+/* Find-a-doctor-page */
+
+.find-a-doc-head{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.page-2-head{
+    padding: 40px 60px 40px 0px;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+}
+
+.page-2-head h1{
+    color: var(--mainblue);
+}
+
+.doc-img{
+    display: grid;
+    place-items: center;
+    position: relative;
+}
+
+.doc-img::after{
+    content: "";
+    background-color: var(--mainblue);
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    top: 4%;
+    left: 10%;
+    animation: floater 7s infinite;
+}
+
+.doc-img::before{
+    content: "";
+    background-color: rgb(255, 94, 121);
+    height: 150px;
+    width: 150px;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    animation: floater 7s infinite;
+}
+
+.doc-img::before{
+    content: "";
+    background-color: rgb(255, 94, 121);
+    height: 150px;
+    width: 150px;
+    position: absolute;
+    top: 70%;
+    left: 60%;
+    animation: floater 7s infinite;
+}
+
+/* 
+.doc-img-inner::after{
+    content: "";
+    background-color: rgb(255, 94, 121);
+    height: 150px;
+    width: 150px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    animation: floater 7s infinite;
+    z-index: 2;
+} */
+
+
+
+
+
 
